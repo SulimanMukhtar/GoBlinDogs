@@ -59,7 +59,7 @@ export const ResponsiveWrapper = styled.div`
   flex-direction: column;
   justify-content: stretched;
   align-items: stretched;
-  width: 100%;
+  width: 60%;
   @media (min-width: 767px) {
     flex-direction: row;
   }
@@ -69,6 +69,7 @@ export const StyledLogo = styled.img`
   width: 200px;
   @media (min-width: 767px) {
     width: 300px;
+
   }
   transition: width 0.5s;
   transition: height 0.5s;
@@ -206,9 +207,7 @@ function App() {
         </a>
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} />
-          </s.Container>
+
           <s.SpacerLarge />
           <s.Container
             flex={2}
@@ -249,13 +248,13 @@ function App() {
             >
               <StyledButton
                 onClick={(e) => {
-                  window.open("/config/roadmap.pdf", "_blank");
+                  window.open("https://twitter.com/4Bits4", "_blank");
                 }}
                 style={{
                   margin: "5px",
                 }}
               >
-                Roadmap
+                Twitter
               </StyledButton>
               <StyledButton
                 style={{
@@ -298,11 +297,16 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees.
+                  Maximum 10 per txn and 20 per wallet
+                  4646 of 4Bits that gives you chance to win 0.1 ETH for every 500 minted
+                  For each 500 minted we will give way 0.1 ETH immediately or an NFT with 0.1 ETH Value
+                  Instant reveal and Optimized contract | mint 1 is like mint 10.
+
+                  See the winners on Twitter
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
-                blockchain.smartContract === null ? (
+                  blockchain.smartContract === null ? (
                   <s.Container ai={"center"} jc={"center"}>
                     <s.TextDescription
                       style={{
@@ -398,13 +402,8 @@ function App() {
             <s.SpacerMedium />
           </s.Container>
           <s.SpacerLarge />
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg
-              alt={"example"}
-              src={"/config/images/example.gif"}
-              style={{ transform: "scaleX(-1)" }}
-            />
-          </s.Container>
+
+
         </ResponsiveWrapper>
         <s.SpacerMedium />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
@@ -430,8 +429,8 @@ function App() {
             gas limit.
           </s.TextDescription>
         </s.Container>
-      </s.Container>
-    </s.Screen>
+      </s.Container >
+    </s.Screen >
   );
 }
 
