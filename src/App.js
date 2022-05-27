@@ -297,12 +297,19 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Maximum 10 per txn and 20 per wallet
-                  4646 of 4Bits that gives you chance to win 0.1 ETH for every 500 minted
+                  Maximum 10 per txn and 20 per wallet | Instant reveal and Optimized contract
+                </s.TextDescription><s.TextDescription
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  4646 of 4Bits that gives you chance to win one NFT or 0.1 ETH; already ArmorsNFT is purchased for you
+                </s.TextDescription><s.TextDescription
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
                   For each 500 minted we will give way 0.1 ETH immediately or an NFT with 0.1 ETH Value
-                  Instant reveal and Optimized contract | mint 1 is like mint 10.
-
-                  See the winners on Twitter
+                </s.TextDescription><s.TextDescription
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  See results in real time on our twitter page
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
