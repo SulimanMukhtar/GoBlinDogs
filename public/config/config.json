@@ -10,7 +10,7 @@
   "SYMBOL": "4Bits",
   "MAX_SUPPLY": 4646,
   "WEI_COST": 4000000000000000000,
-  "DISPLAY_COST": 0,
+  "DISPLAY_COST": 0.002,
   "GAS_LIMIT": 170000,
   "MARKETPLACE": "Opensea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/4bits",
