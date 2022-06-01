@@ -6,13 +6,13 @@
     "SYMBOL": "ETH",
     "ID": 1
   },
-  "NFT_NAME": "The 4Bits NFT",
-  "SYMBOL": "4Bits",
-  "MAX_SUPPLY": 4646,
+  "NFT_NAME": "The NeoDeers NFT",
+  "SYMBOL": "NeoDeers",
+  "MAX_SUPPLY": 3000,
   "WEI_COST": 4000000000000000000,
-  "DISPLAY_COST": 0.002,
+  "DISPLAY_COST": 0,
   "GAS_LIMIT": 170000,
   "MARKETPLACE": "Opensea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/4bits",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/NeoDeers",
   "SHOW_BACKGROUND": true
 }

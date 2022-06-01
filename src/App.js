@@ -59,7 +59,8 @@ export const ResponsiveWrapper = styled.div`
   flex-direction: column;
   justify-content: stretched;
   align-items: stretched;
-  width: 60%;
+  width: 100%;
+  height: 100%;
   @media (min-width: 767px) {
     flex-direction: row;
   }
@@ -212,7 +213,12 @@ function App() {
           <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
         </a>
         <s.SpacerSmall />
-        <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
+        <s.TextDescription
+          style={{ textAlign: "center", color: "var(--accent-text)" }}
+        >
+          Mint your <span style={{ fontSize: "1.5em", fontWeight: "200", transform: "scale(1, 1.5)" }}>NEO</span><span style={{ fontSize: "1.5em", transform: "scale(1, 1.5)" }}>DEERS</span>
+        </s.TextDescription>
+        <ResponsiveWrapper flex={1} style={{}} test>
 
           <s.SpacerLarge />
           <s.Container
@@ -220,13 +226,14 @@ function App() {
             jc={"center"}
             ai={"center"}
             style={{
-              backgroundColor: "var(--accent)",
-              padding: 24,
-              borderRadius: 24,
-              border: "4px dashed var(--secondary)",
-              boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+
             }}
           >
+            <s.TextDescription
+              style={{ textAlign: "center", color: "var(--accent-text)" }}
+            >
+              First 300 (Only Gas) Then 0.003 ETH
+            </s.TextDescription>
             <s.TextTitle
               style={{
                 textAlign: "center",
@@ -254,7 +261,7 @@ function App() {
             >
               <StyledButton
                 onClick={(e) => {
-                  window.open("https://twitter.com/4Bits4", "_blank");
+                  window.open("https://twitter.com/NeoDeers4", "_blank");
                 }}
                 style={{
                   margin: "5px",
@@ -303,20 +310,9 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Maximum 10 per txn and 20 per wallet | Instant reveal and Optimized contract
-                </s.TextDescription><s.TextDescription
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  4646 of 4Bits that gives you chance to win one NFT or 0.1 ETH; already ArmorsNFT is purchased for you
-                </s.TextDescription><s.TextDescription
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  For each 500 minted we will give way 0.1 ETH immediately or an NFT with 0.1 ETH Value
-                </s.TextDescription><s.TextDescription
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  See results in real time on our twitter page
+                  Max 10 Per Wallet
                 </s.TextDescription>
+
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
                   blockchain.smartContract === null ? (
