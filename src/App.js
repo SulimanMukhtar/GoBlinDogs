@@ -261,7 +261,7 @@ function App() {
             >
               <StyledButton
                 onClick={(e) => {
-                  window.open("https://twitter.com/NeoDeers4", "_blank");
+                  window.open("https://twitter.com/NeoDeers", "_blank");
                 }}
                 style={{
                   margin: "5px",
