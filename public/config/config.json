@@ -10,7 +10,7 @@
   "SYMBOL": "NeoDeers",
   "MAX_SUPPLY": 3000,
   "WEI_COST": 4000000000000000000,
-  "DISPLAY_COST": 0,
+  "DISPLAY_COST": 0.003,
   "GAS_LIMIT": 170000,
   "MARKETPLACE": "Opensea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/neodeers",
