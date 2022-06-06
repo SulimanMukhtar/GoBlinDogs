@@ -6,13 +6,13 @@
     "SYMBOL": "ETH",
     "ID": 1
   },
-  "NFT_NAME": "The NeoDeers NFT",
-  "SYMBOL": "NeoDeers",
-  "MAX_SUPPLY": 3000,
+  "NFT_NAME": "The GOBLINDOGS NFT",
+  "SYMBOL": "GOBLINDOGS",
+  "MAX_SUPPLY": 10000,
   "WEI_COST": 4000000000000000000,
-  "DISPLAY_COST": 0.003,
+  "DISPLAY_COST": 0.0015,
   "GAS_LIMIT": 170000,
   "MARKETPLACE": "Opensea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/neodeers",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/GOBLINDOGS",
   "SHOW_BACKGROUND": true
 }

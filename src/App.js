@@ -66,15 +66,7 @@ export const ResponsiveWrapper = styled.div`
   }
 `;
 
-export const StyledLogo = styled.img`
-  width: 200px;
-  @media (min-width: 767px) {
-    width: 300px;
 
-  }
-  transition: width 0.5s;
-  transition: height 0.5s;
-`;
 
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
@@ -203,21 +195,29 @@ function App() {
 
   return (
     <s.Screen>
+      <div className="bg-image"></div>
       <s.Container
         flex={1}
         ai={"center"}
-        style={{ padding: 24, backgroundColor: "var(--primary)" }}
-        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
+        style={{ padding: 0, backgroundColor: "var(--primary)", boxShadow: "var(--primary) 15px 0px 111px 119px" }}
+
       >
-        <a href={CONFIG.MARKETPLACE_LINK}>
-          <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
-        </a>
+        <div style={{ marginTop: "100px" }}>
+          <a style={{ paddingRight: "10px" }} href="https://discord.com/">
+            <img src="./config/images/discord.svg" width={32} height={32}></img>
+          </a>
+          <a style={{ paddingRight: "10px" }} href={CONFIG.MARKETPLACE_LINK}>
+            <img src="./config/images/Opensea.svg" width={32} height={32}></img>
+          </a>
+          <a href="https://twitter.com/">
+            <img src="./config/images/Twitter.svg" width={32} height={32}></img>
+          </a>
+        </div>
+
+
+
         <s.SpacerSmall />
-        <s.TextDescription
-          style={{ textAlign: "center", color: "var(--accent-text)" }}
-        >
-          Mint your <span style={{ fontSize: "1.5em", fontWeight: "200", transform: "scale(1, 1.5)" }}>NEO</span><span style={{ fontSize: "1.5em", transform: "scale(1, 1.5)" }}>DEERS</span>
-        </s.TextDescription>
+
         <ResponsiveWrapper flex={1} style={{}} test>
 
           <s.SpacerLarge />
@@ -232,54 +232,15 @@ function App() {
             <s.TextDescription
               style={{ textAlign: "center", color: "var(--accent-text)" }}
             >
+              <span style={{ fontSize: "1.5em", fontWeight: "600", transform: "scale(1, 1.5)", fontFamily: "'Special Elite', cursive" }}>GOBLINDOGS</span>
+            </s.TextDescription>
+            <s.TextDescription
+              style={{ textAlign: "center", color: "var(--accent-text)" }}
+            >
               First 300 (Only Gas) Then 0.003 ETH
             </s.TextDescription>
-            <s.TextTitle
-              style={{
-                textAlign: "center",
-                fontSize: 50,
-                fontWeight: "bold",
-                color: "var(--accent-text)",
-              }}
-            >
-              {data.totalSupply} / {CONFIG.MAX_SUPPLY}
-            </s.TextTitle>
-            <s.TextDescription
-              style={{
-                textAlign: "center",
-                color: "var(--primary-text)",
-              }}
-            >
-              <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
-                {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
-              </StyledLink>
-            </s.TextDescription>
-            <span
-              style={{
-                textAlign: "center",
-              }}
-            >
-              <StyledButton
-                onClick={(e) => {
-                  window.open("https://twitter.com/NeoDeers", "_blank");
-                }}
-                style={{
-                  margin: "5px",
-                }}
-              >
-                Twitter
-              </StyledButton>
-              <StyledButton
-                style={{
-                  margin: "5px",
-                }}
-                onClick={(e) => {
-                  window.open(CONFIG.MARKETPLACE_LINK, "_blank");
-                }}
-              >
-                {CONFIG.MARKETPLACE}
-              </StyledButton>
-            </span>
+
+
             <s.SpacerSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
               <>
@@ -310,7 +271,7 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Max 10 Per Wallet
+                  First 3 For Free
                 </s.TextDescription>
 
                 <s.SpacerSmall />
@@ -415,29 +376,7 @@ function App() {
 
         </ResponsiveWrapper>
         <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
-          <s.TextDescription
-            style={{
-              textAlign: "center",
-              color: "var(--primary-text)",
-            }}
-          >
-            Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
-          </s.TextDescription>
-          <s.SpacerSmall />
-          <s.TextDescription
-            style={{
-              textAlign: "center",
-              color: "var(--primary-text)",
-            }}
-          >
-            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
-          </s.TextDescription>
-        </s.Container>
+
       </s.Container >
     </s.Screen >
   );
