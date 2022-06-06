@@ -232,12 +232,12 @@ function App() {
             <s.TextDescription
               style={{ textAlign: "center", color: "var(--accent-text)" }}
             >
-              <span style={{ fontSize: "1.5em", fontWeight: "600", transform: "scale(1, 1.5)", fontFamily: "'Special Elite', cursive" }}>GOBLINDOGS</span>
+              <span style={{ fontSize: "1.5em", fontWeight: "600", transform: "scale(1, 1.5)", fontFamily: "'Special Elite', cursive" }}>GOBLINVANGOGH</span>
             </s.TextDescription>
             <s.TextDescription
               style={{ textAlign: "center", color: "var(--accent-text)" }}
             >
-              Grkmgg you asked who is Goblin best friend! Woof woof goof CCO
+              Lover of Goblin and vangogh, this is for you
             </s.TextDescription>
 
 
