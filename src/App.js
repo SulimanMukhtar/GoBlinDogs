@@ -199,7 +199,7 @@ function App() {
       <s.Container
         flex={1}
         ai={"center"}
-        style={{ padding: 0, backgroundColor: "var(--primary)", boxShadow: "var(--primary) 15px 0px 111px 119px" }}
+        style={{ padding: 0, backgroundColor: "var(--primary)", boxShadow: "var(--primary) 15px 0px 111px 150px" }}
 
       >
         <div style={{ marginTop: "100px" }}>
