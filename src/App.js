@@ -203,13 +203,13 @@ function App() {
 
       >
         <div style={{ marginTop: "100px" }}>
-          <a style={{ paddingRight: "10px" }} href="https://discord.com/">
-            <img src="./config/images/discord.svg" width={32} height={32}></img>
+          <a style={{ paddingRight: "10px" }} href="https://etherscan.io/">
+            <img src="./config/images/Etherscan.png" width={25} height={25}></img>
           </a>
           <a style={{ paddingRight: "10px" }} href={CONFIG.MARKETPLACE_LINK}>
             <img src="./config/images/Opensea.svg" width={32} height={32}></img>
           </a>
-          <a href="https://twitter.com/">
+          <a href="https://twitter.com/GoblinVanGogh">
             <img src="./config/images/Twitter.svg" width={32} height={32}></img>
           </a>
         </div>
