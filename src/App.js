@@ -237,7 +237,7 @@ function App() {
             <s.TextDescription
               style={{ textAlign: "center", color: "var(--accent-text)" }}
             >
-              First 300 (Only Gas) Then 0.003 ETH
+              Grkmgg you asked who is Goblin best friend! Woof woof goof CCO
             </s.TextDescription>
 
 
