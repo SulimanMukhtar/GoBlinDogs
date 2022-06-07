@@ -107,11 +107,6 @@
 			},
 			{
 				"internalType": "uint256",
-				"name": "_publicMax",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
 				"name": "_maxAmount",
 				"type": "uint256"
 			}
@@ -199,6 +194,19 @@
 	},
 	{
 		"inputs": [],
+		"name": "freeMinted",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
 		"name": "freeQuantity",
 		"outputs": [
 			{
@@ -256,19 +264,6 @@
 	{
 		"inputs": [],
 		"name": "maxAmount",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "maxPublic",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -496,6 +491,11 @@
 			{
 				"internalType": "uint256",
 				"name": "_freeQuantity",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_freeAmount",
 				"type": "uint256"
 			}
 		],
