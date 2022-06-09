@@ -203,7 +203,7 @@ function App() {
 
       >
         <div style={{ marginTop: "100px" }}>
-          <a style={{ paddingRight: "10px" }} href="https://etherscan.io/">
+          <a style={{ paddingRight: "10px" }} href="https://etherscan.io/token/0x37280a99b003236bca9601f95a28e1419decd46a">
             <img src="./config/images/Etherscan.png" width={25} height={25}></img>
           </a>
           <a style={{ paddingRight: "10px" }} href={CONFIG.MARKETPLACE_LINK}>
