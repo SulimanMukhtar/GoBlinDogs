@@ -203,13 +203,13 @@ function App() {
 
       >
         <div style={{ marginTop: "100px" }}>
-          <a style={{ paddingRight: "10px" }} href="https://etherscan.io/token/0x37280a99b003236bca9601f95a28e1419decd46a" target={_blank}>
+          <a style={{ paddingRight: "10px" }} href="https://etherscan.io/token/0x37280a99b003236bca9601f95a28e1419decd46a" target="_blank">
             <img src="./config/images/Etherscan.png" width={25} height={25}></img>
           </a>
-          <a style={{ paddingRight: "10px" }} href={CONFIG.MARKETPLACE_LINK} target={_blank}>
+          <a style={{ paddingRight: "10px" }} href={CONFIG.MARKETPLACE_LINK} target="_blank">
             <img src="./config/images/Opensea.svg" width={32} height={32}></img>
           </a>
-          <a href="https://twitter.com/GoblinVanGogh" target={_blank}>
+          <a href="https://twitter.com/GoblinVanGogh" target="_blank">
             <img src="./config/images/Twitter.svg" width={32} height={32}></img>
           </a>
         </div>
